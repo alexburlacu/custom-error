@@ -1,0 +1,105 @@
+HTTP/1.0 403 Forbidden
+Cache-Control: no-cache
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>403 - You Shall Not Pass</title>
+<style>
+  :root {
+    --black: #000;
+    --semi-black: #1a2130;
+    --white: #fff;
+    --dress: #ededed;
+    --dress-dark: #d3d3d3;
+    --sword: #e6e6e6;
+    --staff: #bf5507;
+    --skin: #ffd8ad;
+    --hair: #c2beb5;
+    --hair-dark: #a9a6a0;
+    --lips: pink;
+    --fire: black, #6C1305, #DE8531, #EFAC41;
+    --fire-reverse: #EFAC41, #DE8531, #6C1305, black;
+  }
+
+  @keyframes floating {
+    to {
+      top: 1.5rem;
+    }
+  }
+
+  body {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .message {
+    max-width: 700px;
+    margin: 5rem auto 0 auto;
+  }
+
+  .gandalf {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    top: 1rem;
+    animation: floating 1s infinite alternate ease-in-out;
+  }
+
+  .gandalf::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    background-color: var(--semi-black);
+    border-radius: 50%;
+  }
+
+  .center-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: auto;
+    z-index: 10;
+  }
+
+  /* Additional styles for other elements omitted for brevity */
+</style>
+</head>
+<body>
+<div class="gandalf">
+  <div class="fireball"></div>
+  <div class="skirt"></div>
+  <div the "sleeves"></div>
+  <div class="shoulders">
+    <div class="hand left"></div>
+    <div class="hand right"></div>
+  </div>
+  <div class="head">
+    <div class="hair"></div>
+    <div class="beard"></div>
+  </div>
+  <img src="forbidden.png" alt="Forbidden" class="center-image">
+</div>
+<div class="message">
+  <h1>403 - You Shall Not Pass</h1>
+  <p>Uh oh, Gandalf is blocking the way!<br />Maybe you have a typo in the url? Or you meant to go to a different location? Like...Hobbiton?</p>
+</div>
+</body>
+</html>
